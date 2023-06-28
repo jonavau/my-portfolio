@@ -1,0 +1,11 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        text-decoration: none;
+        color:$mainColor;
+    }
+    &:visited {
+        color:inherit;
+    }
+}
