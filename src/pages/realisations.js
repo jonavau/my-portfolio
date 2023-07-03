@@ -1,9 +1,22 @@
-export default function Realisation() {
+import { styled } from 'styled-components';
+import { selectTheme } from '../utils/selectors';
+import { useSelector } from 'react-redux';
+
+const StyledHome = styled.main`
+	h1,
+	p {
+		text-decoration: none;
+		color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
+	}
+`;
+
+export default function Realisations() {
+	const theme = useSelector(selectTheme);
+
 	return (
-		<>
-			<h1>
-				Bonjour<span>Bienvenue sur la page Realisation</span>
-			</h1>
-		</>
+		<StyledHome $theme={theme}>
+			<h1>Bonjour</h1>
+			<p>Bienvenue sur la page réalisations</p>
+		</StyledHome>
 	);
 }
