@@ -22,6 +22,10 @@ export default function Home() {
 			<h1>Bonjour</h1>
 			<h2>En développement, revenez plus tard :) </h2>
 			<p>Bienvenue sur la page Home</p>
+			<p>
+				Voici un petit paragraphe pour tester l'intégration continu via
+				github action ;)
+			</p>
 		</StyledHome>
 	);
 }
