@@ -42,7 +42,11 @@ export default function Contact() {
 	return (
 		<StyledHome $theme={theme}>
 			<StyledContact $theme={theme}>
-				<a href="https://github.com/greskelll" target="_blank">
+				<a
+					href="https://github.com/greskelll"
+					target="_blank"
+					rel="noreferrer"
+				>
 					greskelll
 					<i className="fab fa-github"></i>
 				</a>
@@ -51,6 +55,7 @@ export default function Contact() {
 				<a
 					href="https://www.linkedin.com/in/jonathan-vauvert-22570897/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Vauvert Jonathan
 					<i className="fa-brands fa-linkedin-in"></i>
@@ -63,7 +68,7 @@ export default function Contact() {
 				</a>
 			</StyledContact>
 			<StyledContact $theme={theme}>
-				<a href={CV} target="_blank">
+				<a href={CV} target="_blank" rel="noreferrer">
 					Curriculum
 					<i class="fa-solid fa-address-book"></i>
 				</a>
