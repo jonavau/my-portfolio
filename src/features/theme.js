@@ -7,7 +7,7 @@ const themeSlice = createSlice({
 		toggle: (state) => {
 			return state === 'light' ? 'dark' : 'light';
 		},
-		set: (state, action) => {
+		set: (action) => {
 			return action.payload;
 		},
 	},

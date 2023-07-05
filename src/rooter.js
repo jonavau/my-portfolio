@@ -1,12 +1,11 @@
-import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import Root from './routes/root';
 import ErrorPage from './pages/error-pages';
 import Home from './pages/home';
 import Realisation from './pages/realisations';
 import Contact from './pages/contact';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
 	{
 		path: '',
 		element: <Root />,

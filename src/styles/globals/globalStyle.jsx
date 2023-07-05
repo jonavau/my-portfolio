@@ -15,6 +15,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
     .main {
       flex-grow:1;
+      display:flex;
     }
 
 `

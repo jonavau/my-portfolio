@@ -3,6 +3,9 @@ import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
 
 const StyledHome = styled.main`
+	width: 95%;
+	margin: auto;
+
 	h1,
 	h2,
 	p {
