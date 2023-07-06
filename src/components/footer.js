@@ -38,9 +38,7 @@ export function Footer({ website }) {
 	const dispatch = useDispatch();
 	return (
 		<StyledFooter $theme={theme}>
-			<p className="footer-text">
-				{new Date().getFullYear()} {website}
-			</p>
+			<p className="footer-text">{website}</p>
 			<a href="https://github.com/greskelll" rel="external">
 				<i className="fab fa-github"></i>
 			</a>
@@ -56,7 +54,7 @@ export function Footer({ website }) {
 			>
 				{theme === 'light' ? '🌒' : '🌞'}
 			</button>
-			<p>version 1.0</p>
+			<p>1.0</p>
 		</StyledFooter>
 	);
 }
