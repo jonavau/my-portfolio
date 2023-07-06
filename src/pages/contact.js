@@ -26,6 +26,10 @@ const StyledContact = styled.div`
 	padding: 0.5rem;
 	background: ${({ $theme }) => ($theme === 'light' ? '#99adcf' : '#ffffff')};
 
+	@media (max-width: 760px) {
+		width: 90%;
+	}
+
 	a {
 		text-decoration: none;
 		display: flex;
@@ -33,6 +37,10 @@ const StyledContact = styled.div`
 		justify-content: space-between;
 		padding: 0 2rem;
 		color: inherit;
+
+		@media (max-width: 760px) {
+			padding: 0 1rem;
+		}
 	}
 `;
 

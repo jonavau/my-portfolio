@@ -22,10 +22,10 @@ export default function Home() {
 			<h1>Bonjour</h1>
 			<h2>En développement, revenez plus tard :) </h2>
 			<p>Bienvenue sur la page Home</p>
-			<p>
-				Voici un petit paragraphe pour tester l'intégration continu via
-				github action , encore un test avec le build
-			</p>
+			<h3>
+				Présenter votre profil de développeur : la ou les formation(s)
+				suivie(s) et vos compétences.
+			</h3>
 		</StyledHome>
 	);
 }
