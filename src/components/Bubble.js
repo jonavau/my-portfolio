@@ -7,10 +7,11 @@ const StyledBubble = styled.div`
 	align-items: center;
 	padding: 2rem;
 	justify-content: center;
+	transition: all 0.4s ease-out;
 	border-radius: 3rem;
 	margin: 2rem;
 	background: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#51d6aa')};
-	color: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#8186a0')};
+	color: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
 `;
 
 export function Bubble({ content }) {

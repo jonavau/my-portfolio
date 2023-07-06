@@ -11,6 +11,15 @@ const rotate = keyframes`
     }
 `;
 
+const swap = keyframes`
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(15vw, 0) rotate(360deg);
+
+`;
+
 const StyledHeader = styled.header`
 	color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
 `;
@@ -45,21 +54,16 @@ const StyledHeaderNav = styled.nav`
 		position: absolute;
 		z-index: 1;
 		top: -4.5rem;
-		left: 30%;
+		left: 20rem;
 		width: 8rem;
-		animation: ${rotate} 24s linear infinite;
-		transition: scale 1s ease-out;
-	}
-	.sun:hover,
-	.moon:hover {
-		scale: 110%;
+		animation: ${swap} 24s linear infinite alternate;
 	}
 
 	@media (max-width: 1024px) {
 		.sun,
 		.moon {
 			position: absolute;
-			z-index: 1;
+			z-index: -1;
 			top: -2rem;
 			left: 40%;
 			width: 4rem;
