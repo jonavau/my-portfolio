@@ -24,7 +24,7 @@ export default function Home() {
 			<p>Bienvenue sur la page Home</p>
 			<p>
 				Voici un petit paragraphe pour tester l'intégration continu via
-				github action
+				github action , encore un test avec le build
 			</p>
 		</StyledHome>
 	);
