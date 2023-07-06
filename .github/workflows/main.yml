@@ -24,3 +24,10 @@ jobs:
         server: ftp.cluster027.hosting.ovh.net
         username: ${{ secrets.OVH_HOSTING_USER }}
         password: ${{ secrets.OVH_HOSTING_PASSWORD }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          src
+          server
+          public
