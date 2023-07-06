@@ -5,19 +5,28 @@ import { useSelector } from 'react-redux';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
 
-const rotate = keyframes`
-    to {
-    transform: rotate(360deg);
-    }
-`;
-
-const swap = keyframes`
+const swapMax = keyframes`
     0% {
     transform: translate(0, 0) rotate(0deg);
   }
   100% {
-    transform: translate(15vw, 0) rotate(360deg);
+    transform: translate(300px, 0) rotate(360deg);
+`;
 
+const swapMin = keyframes`
+    0% {
+    transform: translate(-40vw, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(40vw, 0) rotate(360deg);
+`;
+
+const swapMed = keyframes`
+    0% {
+    transform: translate(0vw, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(87vw, 0) rotate(360deg);
 `;
 
 const StyledHeader = styled.header`
@@ -56,7 +65,7 @@ const StyledHeaderNav = styled.nav`
 		top: -4.5rem;
 		left: 20rem;
 		width: 8rem;
-		animation: ${swap} 24s linear infinite alternate;
+		animation: ${swapMax} 24s linear infinite alternate;
 	}
 
 	@media (max-width: 1024px) {
@@ -65,10 +74,9 @@ const StyledHeaderNav = styled.nav`
 			position: absolute;
 			z-index: -1;
 			top: -2rem;
-			left: 40%;
+			left: 0%;
 			width: 4rem;
-			animation: ${rotate} 24s linear infinite;
-			transition: scale 1s ease-out;
+			animation: ${swapMed} 24s linear infinite alternate;
 		}
 		.sun:hover,
 		.moon:hover {
@@ -85,8 +93,7 @@ const StyledHeaderNav = styled.nav`
 			margin-right: auto;
 			left: 0;
 			right: 0;
-			animation: ${rotate} 24s linear infinite;
-			transition: scale 1s ease-out;
+			animation: ${swapMin} 24s linear infinite alternate;
 		}
 		.sun:hover,
 		.moon:hover {
