@@ -10,8 +10,12 @@ const StyledBubble = styled.div`
 	transition: all 0.4s ease-out;
 	border-radius: 3rem;
 	margin: 2rem;
+	transform: perspective(600px) rotateY(-40deg);
 	background: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#51d6aa')};
 	color: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
+	&:hover {
+		transform: rotateY(0);
+	}
 
 	@media (max-width: 760px) {
 		padding: 1.5rem;
