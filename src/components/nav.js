@@ -21,10 +21,10 @@ export default function Navigation() {
 	const theme = useSelector(selectTheme);
 	return (
 		<StyledNav $theme={theme}>
-			<NavLink activeClassName="active" to={'/Contact'}>
+			<NavLink activeclassname="active" to={'/Contact'}>
 				Contact
 			</NavLink>
-			<NavLink activeClassName="active" to={'/Realisation'}>
+			<NavLink activeclassname="active" to={'/Realisation'}>
 				Realisation
 			</NavLink>
 		</StyledNav>

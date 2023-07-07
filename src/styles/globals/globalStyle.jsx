@@ -2,13 +2,17 @@ import { useSelector } from 'react-redux'
 import { createGlobalStyle } from 'styled-components'
 import { selectTheme } from '../../utils/selectors'
 
+
+
+
 const StyledGlobalStyle = createGlobalStyle`
     * {
       font-family: Nunito, sans-serif;
     }
     body {
-        background-color: ${(props) =>
-          props.isDarkMode ? '#2F2E41' : 'white'};
+        
+        background: ${(props) =>
+  props.isDarkMode ? 'radial-gradient(ellipse at top, #c6d4d1, #292e2d)' : 'radial-gradient(ellipse at top, #ffffff, #e0e7e3, #e4fcf8)'};
         margin: auto;
         max-width:1024px;
         align-items: center;
@@ -19,6 +23,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 
 `
+
 
 function GlobalStyle() {
   const theme = useSelector(selectTheme)

@@ -12,6 +12,11 @@ const StyledBubble = styled.div`
 	margin: 2rem;
 	background: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#51d6aa')};
 	color: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
+
+	@media (max-width: 760px) {
+		padding: 1.5rem;
+		margin: 1.5rem;
+	}
 `;
 
 export function Bubble({ content }) {

@@ -18,13 +18,11 @@ const StyledHome = styled.main`
 `;
 
 const StyledContact = styled.div`
-	border: 0.5px solid
-		${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
 	border-radius: 1rem;
 	width: 50%;
 	margin: 1rem;
 	padding: 0.5rem;
-	background: ${({ $theme }) => ($theme === 'light' ? '#99adcf' : '#ffffff')};
+	background: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
 
 	@media (max-width: 760px) {
 		width: 90%;
@@ -72,13 +70,13 @@ export default function Contact() {
 			<StyledContact $theme={theme}>
 				<a href="mailto:vauvertjonathan@gmail.com" rel="external">
 					vauvertjonathan@gmail.com
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<i className="fa fa-envelope" aria-hidden="true"></i>
 				</a>
 			</StyledContact>
 			<StyledContact $theme={theme}>
 				<a href={CV} target="_blank" rel="noreferrer">
 					Curriculum
-					<i class="fa-solid fa-address-book"></i>
+					<i className="fa-solid fa-address-book"></i>
 				</a>
 			</StyledContact>
 		</StyledHome>

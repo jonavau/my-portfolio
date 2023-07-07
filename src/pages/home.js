@@ -21,6 +21,10 @@ const StyledBubbleHome = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 5rem;
+	@media (max-width: 760px) {
+		margin: 0rem;
+	}
 `;
 
 export default function Home() {
@@ -30,9 +34,10 @@ export default function Home() {
 		<StyledHome $theme={theme}>
 			<h1>Bonjour</h1>
 			<p>
-				J'ai commencé une formation en Octobre 2022 sur la plateforme en
-				ligne d’OpenClassroom dans le but de me former au développement
-				web de manière autonome et en distanciel.
+				Je suis Jonathan Vauvert, ans 28 , originaire de Nantes en
+				France. J'ai commencé une formation en Octobre 2022 sur la
+				plateforme en ligne d’OpenClassroom dans le but de me former au
+				développement web de manière autonome et en distanciel.
 			</p>
 			<p>
 				Ainsi au cours des derniers mois, j'ai développé des compétences
@@ -40,7 +45,7 @@ export default function Home() {
 			</p>
 			<StyledBubbleHome>
 				{Tech.map((element) => (
-					<Bubble content={element} />
+					<Bubble key={element} content={element} />
 				))}
 			</StyledBubbleHome>
 		</StyledHome>
