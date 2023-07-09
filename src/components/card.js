@@ -9,11 +9,13 @@ const StyledCard = styled.div`
 	align-items: start;
 	padding: 2rem;
 	width: 40%;
+
 	justify-content: center;
 	border-radius: 3rem;
 	margin: 2rem;
 	background: ${({ $theme }) =>
 		$theme === 'light' ? colors.primary : colors.backgroundLight};
+	box-shadow: 0px 0px 3px 5px;
 	transition: all 0.4s ease-out;
 	h3 {
 		text-align: center;
