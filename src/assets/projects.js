@@ -11,7 +11,7 @@ export const projects = [
 		id: '2',
 		title: 'Nina Carducci - photographe',
 		skills: ['SEO', 'Performance', 'Accessibilité'],
-		link: 'https://github.com/greskelll/Projet9OC',
+		link: 'https://greskelll.github.io/Projet9OC/',
 		description:
 			"A l'aide d'outils tel que LightHouse et Wave, j'ai réalisé l'audit d'un site et optimiser ses performances, son accessibilité et son SEO",
 	},

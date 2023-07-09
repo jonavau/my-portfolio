@@ -3,7 +3,6 @@ import { projects } from '../assets/projects';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { styled } from 'styled-components';
-import why from '../assets/project_img/argent_bank_3.PNG';
 
 const StyledView = styled.div`
 	width: 95%;
@@ -31,7 +30,7 @@ export function DetailRealisation() {
 				<p>{returnId[0].description}</p>
 				<>
 					{returnId[0].pictures.map((img) => (
-						<img src={img} />
+						<img src="" />
 					))}
 				</>
 			</StyledView>
