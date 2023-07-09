@@ -5,7 +5,7 @@ import { selectTheme } from '../utils/selectors';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { keyframes, styled } from 'styled-components';
+import { styled } from 'styled-components';
 import colors from '../styles/utils/colors';
 
 const StyledView = styled.div`
