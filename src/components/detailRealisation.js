@@ -30,7 +30,7 @@ export function DetailRealisation() {
 				<p>{returnId[0].description}</p>
 				<>
 					{returnId[0].pictures.map((img) => (
-						<img src="" />
+						<img src={img} />
 					))}
 				</>
 			</StyledView>
