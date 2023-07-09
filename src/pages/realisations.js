@@ -24,12 +24,12 @@ export default function Realisations() {
 			<h1>Bonjour</h1>
 			<h2>
 				Bienvenue sur la page réalisations, voici quelques un des
-				projets que j'ai réalisé et les compétences qu'ils m'ont permis
-				de développer
+				projets que j'ai réalisés et les compétences qu'ils m'ont permis
+				de développer.
 			</h2>
 			<RealisationCards />
 			<p className="note">
-				*retrouvez plus de projets sur mon GitHub, disponible dans le
+				*Retrouvez plus de projets sur mon GitHub, disponible dans le
 				footer ou dans les contacts{' '}
 			</p>
 		</StyledHome>

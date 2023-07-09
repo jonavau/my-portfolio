@@ -22,10 +22,10 @@ export default function Navigation() {
 	return (
 		<StyledNav $theme={theme}>
 			<NavLink activeclassname="active" to={'/Contact'}>
-				Contact
+				Contacts
 			</NavLink>
 			<NavLink activeclassname="active" to={'/Realisation'}>
-				Realisation
+				Realisations
 			</NavLink>
 		</StyledNav>
 	);

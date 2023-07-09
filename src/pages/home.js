@@ -36,8 +36,8 @@ export default function Home() {
 		<StyledHome $theme={theme}>
 			<h1>Bonjour</h1>
 			<p>
-				Je suis Jonathan Vauvert, ans 28 , originaire de Nantes en
-				France. J'ai commencé une formation en Octobre 2022 sur la
+				Je suis Jonathan Vauvert, ans 28, originaire de Nantes en
+				France. J'ai commencé une formation en octobre 2022 sur la
 				plateforme en ligne d’OpenClassroom dans le but de me former au
 				développement web de manière autonome et en distanciel.
 			</p>

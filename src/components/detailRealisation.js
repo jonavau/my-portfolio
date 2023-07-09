@@ -2,9 +2,10 @@ import { useParams } from 'react-router-dom';
 import { projects } from '../assets/projects';
 import { useEffect } from 'react';
 import { selectTheme } from '../utils/selectors';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { styled } from 'styled-components';
+import { keyframes, styled } from 'styled-components';
 import colors from '../styles/utils/colors';
 
 const StyledView = styled.div`
@@ -18,12 +19,10 @@ const StyledView = styled.div`
 	h2,
 	a,
 	p {
+		margin: 1rem;
 		text-decoration: none;
 		color: ${({ $theme }) =>
 			$theme === 'light' ? colors.secondary : '#ffffff'};
-	}
-	a {
-		margin: 2rem;
 	}
 `;
 const StyledViewBis = styled.div`
@@ -85,7 +84,6 @@ export function DetailRealisation() {
 		returnId[0] && (
 			<StyledView $theme={theme}>
 				<h2>{ActualProject.title}</h2>
-
 				<StyledViewBis>
 					<p>{ActualProject.bigDescription}</p>
 					<StyledViewImg>
@@ -104,6 +102,7 @@ export function DetailRealisation() {
 				<a href={ActualProject.link} target="_blank" rel="noreferrer">
 					Visitez le git de ce projet.
 				</a>
+				<Link to={'/Realisation'}>Retour aux réalisations</Link>
 			</StyledView>
 		)
 	);
