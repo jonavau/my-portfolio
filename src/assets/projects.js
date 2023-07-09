@@ -31,10 +31,7 @@ export const projects = [
 		description:
 			"J'ai ici affiché les données du back end sur l'interface via des appels API ,implémenté la gestion des données avec Redux et Redux-persist pour assurer le fonctionnement du front et configuré des routes API pour la communication client / serveur",
 		pictures: [
-			'project_img/argent_ban_2.png',
-			'./project_img/argent_bank_1.PNG/',
-			'../assets/project_img/argent_bank_3.PNG',
-			'/static/media/moon.fb69f797c12130eb5bb8.png',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/318667cc2414c171e89f915dd084bbc7896ef674/src/assets/project_img/argent_bank_1.PNG',
 		],
 	},
 ];
