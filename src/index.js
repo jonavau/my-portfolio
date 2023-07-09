@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import { router } from './rooter';
 import store from './utils/store';
 import { Provider } from 'react-redux';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './styles/globals/reset.scss';
 
 /* persistGate va delayer le chargement jusqu'à ce que l'on récupère les data de user */
@@ -14,9 +15,11 @@ const root = createRoot(container);
 
 root.render(
 	<Provider store={store}>
-		<React.StrictMode>
-			<RouterProvider router={router} />
-		</React.StrictMode>
+		<ParallaxProvider>
+			<React.StrictMode>
+				<RouterProvider router={router} />
+			</React.StrictMode>
+		</ParallaxProvider>
 	</Provider>
 );
 

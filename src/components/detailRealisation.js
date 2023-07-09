@@ -5,6 +5,7 @@ import { selectTheme } from '../utils/selectors';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { useParallax, useParallaxController } from 'react-scroll-parallax';
 import { styled } from 'styled-components';
 import colors from '../styles/utils/colors';
 
@@ -73,6 +74,10 @@ export function DetailRealisation() {
 	const returnId = projects.filter((project) => project.id === wantedId);
 	const ActualProject = returnId[0];
 	const theme = useSelector(selectTheme);
+	const parallaxController = useParallaxController();
+	const parallax = useParallax({
+		speed: 10,
+	});
 
 	useEffect(() => {
 		if (ActualProject === undefined) {
@@ -91,6 +96,10 @@ export function DetailRealisation() {
 							<>
 								<ImgBox>
 									<img
+										ref={parallax.ref}
+										onLoad={() =>
+											parallaxController.update()
+										}
 										src={img}
 										alt="capture d'ecran du projet disponible sur github"
 									/>
