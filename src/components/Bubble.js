@@ -15,8 +15,10 @@ const StyledBubble = styled.div`
 	background: ${({ $theme }) =>
 		$theme === 'light' ? colors.secondary : colors.primary};
 	color: ${({ $theme }) => ($theme === 'light' ? colors.primary : '#ffffff')};
+	box-shadow: 6px 0px 20px -10px;
 	&:hover {
 		transform: rotateY(0);
+		box-shadow: 0px 0px 20px -5px;
 	}
 
 	@media (max-width: 760px) {
