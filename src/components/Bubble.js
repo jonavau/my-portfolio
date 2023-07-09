@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
+import colors from '../styles/utils/colors';
 
 const StyledBubble = styled.div`
 	display: flex;
@@ -11,8 +12,9 @@ const StyledBubble = styled.div`
 	border-radius: 3rem;
 	margin: 2rem;
 	transform: perspective(600px) rotateY(-40deg);
-	background: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#51d6aa')};
-	color: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
+	background: ${({ $theme }) =>
+		$theme === 'light' ? colors.secondary : colors.primary};
+	color: ${({ $theme }) => ($theme === 'light' ? colors.primary : '#ffffff')};
 	&:hover {
 		transform: rotateY(0);
 	}

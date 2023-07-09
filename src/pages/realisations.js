@@ -2,15 +2,17 @@ import { styled } from 'styled-components';
 import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
 import { RealisationCards } from '../components/realisations';
+import colors from '../styles/utils/colors';
 
 const StyledHome = styled.main`
 	width: 95%;
 	margin: auto;
 	h1,
 	h2,
-	p {
+	.note {
 		text-decoration: none;
-		color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
+		color: ${({ $theme }) =>
+			$theme === 'light' ? colors.secondary : '#ffffff'};
 	}
 `;
 
@@ -25,9 +27,8 @@ export default function Realisations() {
 				projets que j'ai réalisé et les compétences qu'ils m'ont permis
 				de développer
 			</h2>
-
 			<RealisationCards />
-			<p>
+			<p className="note">
 				*retrouvez plus de projets sur mon GitHub, disponible dans le
 				footer ou dans les contacts{' '}
 			</p>

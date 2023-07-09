@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 const StyledRealisations = styled.div`
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 `;
 
@@ -26,6 +27,7 @@ export function RealisationCards() {
 					key={generateKey()}
 					title={card.title}
 					link={card.link}
+					id={card.id}
 					skills={card.skills}
 					description={card.description}
 				/>

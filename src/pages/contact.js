@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
 import CV from '../assets/CV.pdf';
+import colors from '../styles/utils/colors';
 
 const StyledHome = styled.main`
 	width: 95%;
@@ -13,7 +14,8 @@ const StyledHome = styled.main`
 	h1,
 	p {
 		text-decoration: none;
-		color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
+		color: ${({ $theme }) =>
+			$theme === 'light' ? colors.secondary : '#ffffff'};
 	}
 `;
 
@@ -22,7 +24,8 @@ const StyledContact = styled.div`
 	width: 50%;
 	margin: 1rem;
 	padding: 0.5rem;
-	background: ${({ $theme }) => ($theme === 'light' ? '#51d6aa' : '#ffffff')};
+	background: ${({ $theme }) =>
+		$theme === 'light' ? colors.primary : '#ffffff'};
 
 	@media (max-width: 760px) {
 		width: 90%;

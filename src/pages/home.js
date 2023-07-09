@@ -3,6 +3,7 @@ import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
 import { Bubble } from '../components/Bubble';
 import Tech from '../assets/Tech';
+import colors from '../styles/utils/colors';
 
 const StyledHome = styled.main`
 	width: 95%;
@@ -12,7 +13,8 @@ const StyledHome = styled.main`
 	h2,
 	p {
 		text-decoration: none;
-		color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
+		color: ${({ $theme }) =>
+			$theme === 'light' ? colors.secondary : '#ffffff'};
 	}
 `;
 

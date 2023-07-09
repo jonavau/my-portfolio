@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { styled, keyframes } from 'styled-components';
 import { selectTheme } from '../utils/selectors';
 import { useSelector } from 'react-redux';
+import colors from '../styles/utils/colors';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
 
@@ -30,7 +31,8 @@ const swapMed = keyframes`
 `;
 
 const StyledHeader = styled.header`
-	color: ${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#ffffff')};
+	color: ${({ $theme }) =>
+		$theme === 'light' ? colors.secondary : '#ffffff'};
 `;
 
 const StyledHeaderNav = styled.nav`
@@ -40,7 +42,8 @@ const StyledHeaderNav = styled.nav`
 	align-items: center;
 	transition: border-color 1s ease-out;
 	border-bottom: 2px solid
-		${({ $theme }) => ($theme === 'light' ? '#8186a0' : '#51d6aa')};
+		${({ $theme }) =>
+			$theme === 'light' ? colors.secondary : colors.primary};
 	padding: 2rem 0 1.5rem;
 	box-shadow: 0 15px 20px -20px #48abe0;
 	height: 4.5rem;
@@ -61,7 +64,7 @@ const StyledHeaderNav = styled.nav`
 	.sun,
 	.moon {
 		position: absolute;
-		z-index: 1;
+		z-index: -1;
 		top: -4.5rem;
 		left: 20rem;
 		width: 8rem;
@@ -87,17 +90,13 @@ const StyledHeaderNav = styled.nav`
 		.sun,
 		.moon {
 			position: absolute;
-			z-index: 1;
+			z-index: -1;
 			top: -1.5rem;
 			margin-left: auto;
 			margin-right: auto;
 			left: 0;
 			right: 0;
 			animation: ${swapMin} 24s linear infinite alternate;
-		}
-		.sun:hover,
-		.moon:hover {
-			scale: 110%;
 		}
 	}
 `;
