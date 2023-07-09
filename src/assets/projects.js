@@ -6,6 +6,8 @@ export const projects = [
 		link: 'https://github.com/greskelll/Projet6OC',
 		description:
 			"Dans ce projet j'ai pût mettre en pratique  la manipulation des éléments du DOM avec JavaScript ,récupérer les données utilisateurs dans le JavaScript via des formulaires et gérer les événements utilisateurs avec JavaScript.",
+		bigDescription:
+			"Dans ce projet j'ai pût mettre en pratique  la manipulation des éléments du DOM avec JavaScript pour générer une gallerie d'image à partir d'une base de donnée .J'ai récupérer les données utilisateurs dans le JavaScript via des formulaires pour gérer l'authentification et la connexion d'utilisateurs. J'ai également mis en place une gestion des évenements avec JavaScript pour avoir un tri sur les éléments de la gallerie. Enfin j'ai réalisé une fenêtre modale qui permet d'ajouter et de supprimer des éléments de la gallerie.",
 		pictures: [
 			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie2.PNG',
 			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie3.PNG',
@@ -20,6 +22,11 @@ export const projects = [
 		description:
 			"A l'aide d'outils tel que LightHouse et Wave, j'ai réalisé l'audit d'un site et optimiser ses performances, son accessibilité et son SEO",
 		pictures: [
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina1.png',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina2.png',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina3.png',
+		],
+		moreDesc: [
 			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina1.png',
 			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina2.png',
 			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina3.png',
