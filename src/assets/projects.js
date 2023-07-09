@@ -7,9 +7,9 @@ export const projects = [
 		description:
 			"Dans ce projet j'ai pût mettre en pratique  la manipulation des éléments du DOM avec JavaScript ,récupérer les données utilisateurs dans le JavaScript via des formulaires et gérer les événements utilisateurs avec JavaScript.",
 		pictures: [
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina2.PNG',
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina3.PNG',
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina1.PNG',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie2.PNG',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie3.PNG',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie1.PNG',
 		],
 	},
 	{
@@ -20,9 +20,9 @@ export const projects = [
 		description:
 			"A l'aide d'outils tel que LightHouse et Wave, j'ai réalisé l'audit d'un site et optimiser ses performances, son accessibilité et son SEO",
 		pictures: [
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie2.PNG',
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie3.PNG',
-			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/sophie1.PNG',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina1.png',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina2.png',
+			'https://raw.githubusercontent.com/greskelll/my-portfolio/master/src/assets/project_img/Nina3.png',
 		],
 	},
 	{
