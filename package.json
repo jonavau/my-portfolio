@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": ".",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -15,6 +14,7 @@
     "react-router-dom": "^6.14.0",
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.4.2",
+    "react-snap": "^1.23.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.63.6",
     "styled-components": "^6.0.1",
