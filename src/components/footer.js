@@ -37,16 +37,6 @@ const walkMed = keyframes`
     transform: translate(18rem, 0) ;
 `;
 
-const noWalk = keyframes`
-    0% {
-    transform: translate(-20rem, 0) ;
-  }
-
-
-  100% {
-    transform: translate(-15rem, 0) ;
-`;
-
 const StyledCat = styled.img`
 	position: absolute;
 	z-index: 1;
@@ -62,7 +52,7 @@ const StyledCat = styled.img`
 		animation: ${walkMin} 23s linear forwards;
 	}
 	@media (max-width: 650px) {
-		animation: ${noWalk} 23s linear forwards;
+		display: none;
 	}
 `;
 

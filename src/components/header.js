@@ -45,7 +45,7 @@ const StyledHeaderNav = styled.nav`
 		${({ $theme }) =>
 			$theme === 'light' ? colors.secondary : colors.primary};
 	padding: 2rem 0 1.5rem;
-	box-shadow: 0 15px 20px -20px #48abe0;
+	box-shadow: 0 15px 20px -20px ${colors.primary};
 	height: 4.5rem;
 	position: relative;
 	width: 95%;
@@ -108,7 +108,8 @@ export function Header({ children }) {
 		<StyledHeader $theme={theme}>
 			<StyledHeaderNav $theme={theme}>
 				<Link className="header-nav__link" to={''}>
-					Jonathan Vauvert - Junior web developper
+					Jonathan Vauvert - Junior developper{' '}
+					<i class="fas fa-home"></i>
 				</Link>
 				{theme === 'light' ? (
 					<img src={sun} alt="the Sun" className="sun"></img>

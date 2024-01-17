@@ -21,16 +21,20 @@ export default function Realisations() {
 
 	return (
 		<StyledHome $theme={theme}>
-			<h1>Bonjour</h1>
 			<h2>
-				Bienvenue sur la page réalisations, voici quelques un des
-				projets que j'ai réalisés et les compétences qu'ils m'ont permis
-				de développer.
+				Voici quelques un des projets que j'ai réalisés et les
+				compétences qu'ils m'ont permis de développer.
 			</h2>
 			<RealisationCards />
 			<p className="note">
-				*Retrouvez plus de projets sur mon GitHub, disponible dans le
-				footer ou dans les contacts{' '}
+				*Retrouvez plus de projets sur mon{' '}
+				<a
+					href="https://github.com/greskelll"
+					target="_blank"
+					rel="noreferrer"
+				>
+					GitHub
+				</a>{' '}
 			</p>
 		</StyledHome>
 	);
