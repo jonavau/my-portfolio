@@ -29,7 +29,7 @@ export default function Realisations() {
 			<p className="note">
 				*Retrouvez plus de projets sur mon{' '}
 				<a
-					href="https://github.com/greskelll"
+					href="https://github.com/jonavau"
 					target="_blank"
 					rel="noreferrer"
 				>

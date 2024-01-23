@@ -52,11 +52,11 @@ export default function Contact() {
 		<StyledHome $theme={theme}>
 			<StyledContact $theme={theme}>
 				<a
-					href="https://github.com/greskelll"
+					href="https://github.com/jonavau"
 					target="_blank"
 					rel="noreferrer"
 				>
-					greskelll
+					jonavau
 					<i className="fab fa-github"></i>
 				</a>
 			</StyledContact>

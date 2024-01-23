@@ -102,7 +102,7 @@ export function Footer({ website }) {
 			></StyledCat>
 			<p className="footer-text">{website}</p>
 			<a
-				href="https://github.com/greskelll"
+				href="https://github.com/jonavau"
 				target="_blank"
 				rel="noreferrer"
 			>
