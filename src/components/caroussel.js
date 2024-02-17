@@ -25,6 +25,24 @@ const CarouselImg = styled.img`
 	@media (max-width: 640px) {
 		height: 22rem;
 	}
+	z-index: 1;
+`;
+
+const CarouselFondu = styled.div`
+	width: 100%;
+	position: absolute;
+	height: 40rem;
+	object-fit: contain;
+	border-radius: 25px;
+	@media (max-width: 800px) {
+		height: 30rem;
+	}
+	@media (max-width: 640px) {
+		height: 22rem;
+	}
+	z-index: 2;
+	background-color: invisible;
+	box-shadow: inset 0 0 45px 30px white;
 `;
 
 const LeftArrow = styled.img`
@@ -41,6 +59,7 @@ const LeftArrow = styled.img`
 		height: 22px;
 		top: 50%;
 	}
+	z-index: 3;
 `;
 
 const RightArrow = styled.img`
@@ -57,6 +76,7 @@ const RightArrow = styled.img`
 		height: 22px;
 		top: 50%;
 	}
+	z-index: 3;
 `;
 
 const PicNum = styled.div`
@@ -68,6 +88,7 @@ const PicNum = styled.div`
 	@media (max-width: 1024px) {
 		display: none;
 	}
+	z-index: 3;
 `;
 
 function Carousel({ project }) {
@@ -75,6 +96,7 @@ function Carousel({ project }) {
 	const theme = useSelector(selectTheme);
 	return project.pictures.length > 1 ? (
 		<CarouselStyled $theme={theme}>
+			<CarouselFondu></CarouselFondu>
 			<CarouselImg
 				alt={project.description}
 				src={project.pictures[index]}
