@@ -11,7 +11,7 @@ const CarouselStyled = styled.div`
 	width: 100%;
 	border-radius: 25px;
 	background: ${({ $theme }) =>
-		$theme === 'light' ? colors.primary : colors.secondary};
+		$theme === 'light' ? colors.backgroundLight : colors.backgroundDark};
 `;
 
 const CarouselImg = styled.img`
@@ -41,8 +41,11 @@ const CarouselFondu = styled.div`
 		height: 22rem;
 	}
 	z-index: 2;
-	background-color: invisible;
-	box-shadow: inset 0 0 45px 30px white;
+	box-shadow: inset 0 0 45px 30px
+		${({ $theme }) =>
+			$theme === 'light'
+				? colors.backgroundLight
+				: colors.backgroundDark};
 `;
 
 const LeftArrow = styled.img`
@@ -96,7 +99,7 @@ function Carousel({ project }) {
 	const theme = useSelector(selectTheme);
 	return project.pictures.length > 1 ? (
 		<CarouselStyled $theme={theme}>
-			<CarouselFondu></CarouselFondu>
+			<CarouselFondu $theme={theme}></CarouselFondu>
 			<CarouselImg
 				alt={project.description}
 				src={project.pictures[index]}
