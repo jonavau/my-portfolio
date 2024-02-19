@@ -12,7 +12,7 @@ const StyledGlobalStyle = createGlobalStyle`
     body {
         
         background: ${(props) =>
-  props.isDarkMode ? 'radial-gradient(#292e2d, #261a4f)' : 'radial-gradient(ellipse at top,#fcf7f0, #ffffff, #f7f4f0 )'};
+  props.isDarkMode ? '#111111' : '#f7f7f7'};
         margin: auto;
         max-width:1024px;
         align-items: center;
